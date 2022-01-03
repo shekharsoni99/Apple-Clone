@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@200&family=Roboto:wght@300&family=Rubik&family=Spline+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <title>Apple</title>
+</head>
+    <!-- nav_bar & nav_bottom -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@200&family=Roboto:wght@300&family=Rubik&family=Spline+Sans:wght@400;500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            /* box-sizing:content-box; */
+        }
+
+        body {
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            letter-spacing: 0.02em;
+            /* font-weight: 400; */
+            font-size: 14px;
+            /* margin: 0;
+            padding: 0; */
+            /* position: relative; */
+        }
+
+        .nav {
+            background-color: rgb(43, 42, 42);
+            height: 3em;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            /* position: fixed; */
+            z-index: 12;
+            justify-content: center;
+            /* opacity: 0.98; */
+        }
+
+        .items {
+            width: 5em;
+            margin: 0% 0.09%;
+            height: 100%;
+            /* border: 1px green solid; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 4;
+        }
+
+        .items a{
+            text-decoration: none;
+            color: rgb(204, 204, 204);
+            height: 100%;
+            display: flex;
+            font-size: 12px;
+            /* font-weight: 600; */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* cursor: default; */
+            /* border: red solid; */
+        }
+
+        .nav a:hover {
+            color: white;
+            /* border-radius: 3vh; */
+            transition: 800ms;
+        }
+
+        .items img {
+            height: 50%;
+            opacity: 0.6;
+            /* background-color: rgb(0, 0, 0); */
+        }
+
+        .items img:hover {
+            /* background-color: white; */
+            opacity: 1;
+            transition: 600ms;
+        }
+        .items1 {
+            width: 7.5em;
+            flex-shrink: 2;
+        }
+
+        .nav_bottom {
+            letter-spacing: 0.008em;
+            font-size: 14px;
+            color: rgb(67,67,69);
+            /* border: 1px solid red; */
+            margin: 1.2% 10% 1.5% 10%;
+            text-align: center;
+            /* position: fixed; */
+            /* top: 4%; */
+            /* cursor: default; */
+        }
+
+        .nav_bottom_span a{
+            font-size: 14px;
+            /* cursor: default; */
+            /* border: solid; */
+            text-decoration: none;
+            color: rgb(13,109,206);
+        }
+
+        .nav_bottom_span a:hover, .first_image_division > p:nth-child(2):hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- first image -->
+    <style>
+        .first_image {
+            /* width: 100%; */
+            height: 48em;
+            background-image: url(http://tikitecha.com/wp-content/uploads/2020/08/Image-7-1024x538.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: 1px solid rgb(238, 238, 238);
+            position: relative;
+        }
+
+        .first_image_division {
+            line-height: 310%;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            text-align: center;
+            /* border: yellow solid; */
+        }
+
+        .first_image a {
+            text-decoration: none;
+        }
+
+        .first_image_division > p:nth-child(1) {
+            /* border: solid; */
+            color: black;
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .first_image_division > p:nth-child(2):hover {
+            text-decoration: underline;
+        }
+
+        .first_image_division > p:nth-child(2) , .first_image_division span{
+            /* border: solid; */
+            display: inline-block;
+            font-size: 20px;
+            color: rgb(0, 128, 255);
+        }
+    </style>
+    <!-- iPhone13 pro -->
+    <style>
+        .iphone13pro_division {
+            /* width: 80%; */
+            height: 47em;
+            /* border: solid rgb(221, 221, 221); */
+            margin-top: 1.5%;
+            /* margin: auto; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(35,53,83);
+            /* display: block; */
+        }
+
+        .iphone13prodescription{
+            width: 90%;
+            /* border: solid; */
+            height: 22%;
+            padding-top: 3%;
+            text-align: center;
+        }
+
+        .iphone13pro {
+            width: 70%;
+            background-image: url(https://cdn.mos.cms.futurecdn.net/Dx2P4dyBJxv6FF5RNCKAYK-1024-80.jpg.webp);
+            background-repeat: no-repeat;
+            background-size: 100%100%;
+            height: 70%;
+            /* border: solid; */
+        }
+
+        .iphone13prodescription > p {
+            color: rgb(160, 170, 187);
+            font-size: 55px;
+            text-align: center;
+        }
+
+        .bottom > p, .bottom span{
+            /* width: 12%; */
+            display: inline-block;
+            text-align: right;
+            color: rgb(13,109,206);
+            font-size: 20px;
+            margin-top: 1%;
+            /* border: white solid; */
+        }
+
+        .bottom > p:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <!-- apple products discount -->
+    <style>
+        .apple_products_division {
+            width: 100%;
+            height: 35em;
+            margin-top: 1.5%;
+            position: relative;
+            border-top: 1px solid rgb(238, 238, 238);
+            background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/barclay-financing-202010_GEO_AU?wid=3334&hei=1244&fmt=png-alpha&.v=1633458536000);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            /* background-position-x: center; */
+        }
+
+        .apple_prouct_description {
+            width: 40%;
+            /* border: solid; */
+            padding: 1%;
+            position: absolute;
+            top: 12%;
+            left: 30%;
+            /* background-color: rgb(243, 243, 243); */
+            color: rgb(224, 31, 31, 1);
+            text-align: center;
+            font-size: x-large;  
+            opacity: 0.7;
+            /* letter-spacing: 0.025em; */
+        }
+        
+        .apple_product_bottom > p, .apple_product_bottom span{
+            /* width: 12%; */
+            display: inline-block;
+            /* text-align: right; */
+            color: rgb(13,109,206);
+            font-size: 17px;
+            line-height: 150%;
+            margin-top: 1%;
+            /* border: white solid; */
+        }
+
+        .apple_product_bottom > p:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <!-- container apple products-->
+    <style>
+        .container {
+            margin-top: 1.5%;
+            width: 100%;
+            height: 133em;
+            /* padding-left: 0.2%; */
+            /* border: yellow solid; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container > div {
+            width: 99%;
+            height: 32.9%;
+            /* border: 1px solid red; */
+            /* margin-bottom: 1%; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .products {
+            /* border: 3px orangered solid; */
+            width: 49.5%;
+            height: 100%;
+            /* position: relative; */
+        }
+
+        .products div:nth-child(1) {
+            height: 20%;
+            width: 100%;
+            /* border:1px solid yellow; */
+            /* position: absolute; */
+        }
+
+        .products div:nth-child(2) {
+            height: 80%;
+            width: 100%;
+            /* position: absolute; */
+            /* border:1px solid olive; */
+        }
+        .products img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .products a {
+            text-decoration: none;
+        }
+    </style>
+<body>
+    <!-- nav_bar-->
+    <div class="nav">
+        <div class="items"><a href=""><img src="https://api.iconify.design/ion/logo-apple.svg?color=white" alt="logo"></a></div>
+        <div class="items"><a href="">Store</a></div>
+        <div class="items"><a href="">Mac</a></div>
+        <div class="items"><a href="">iPad</a></div>
+        <div class="items"><a href="">iPhone</a></div>
+        <div class="items"><a href="">Watch</a></div>
+        <div class="items"><a href="">Airpods</a></div>
+        <div class="items items1"><a href="">TV & Home</a></div>
+        <div class="items items1"><a href="">Only on Apple</a></div>
+        <div class="items items1"><a href="">Accessories</a></div>
+        <div class="items"><a href="">Support</a></div>
+        <div class="items" style="width: 3%; margin:0px 15px;"><a href="#"><span class="material-icons">search</span></a></div>
+        <div class="items" style="width: 3%;"><a href="#"><span class="material-icons">work_outline</span></a></div>
+    </div>
+    <!-- nav_bottom  -->
+    <div class="nav_bottom">
+        <span class="nav_bottom_span"><a href="">Shop online</a> and  get Specialist help,free delivery,and more. Some of our stores are offering limited services. Before you visit, please check your <span><a href="">store's services.</a></span></span>
+    </div>
+    <!-- first image -->
+    <a href="">
+        <div class="first_image">
+            <div class="first_image_division">
+                <p>Actually, there is a "you" in gift.</p>
+                <p>Shop</p> <span style="margin-left: 0;"> > </span>
+            </div>
+        </div>
+    </a>
+    <!-- iPhone13 pro -->
+    <a href="" style="text-decoration: none;">
+        <div class="iphone13pro_division">
+            <div class="iphone13prodescription">
+                <p>iPhone 13 Pro</p>
+                <p style="font-size: 40px;">Oh. So. Pro</p>
+                <div class="bottom">
+                    <p>Learn more</p> <span style="width: 2%; text-align: left;"> > </span>
+                    <p style="margin-left: 5%">Buy</p> <span style="width: 2%; text-align: left;"> > </span>
+                </div>
+            </div>
+            <div class="iphone13pro"></div>
+        </div>
+    </a>
+    <!-- apple products discount -->
+    <a href="" style="text-decoration: none;">
+        <div class="apple_products_division">
+            <div class="apple_prouct_description">
+                <p>Save 5% on Apple products with a new Apple Card through January 31.</p>
+                <p style="font-size: 18px; color: rgb(55, 56, 82);line-height: 150%;">Only at Apple. Exclusions and terms apply.<sup style="font-size: small;">1</sup></p>
+                <div class="apple_product_bottom">
+                    <p>Learn more</p> <span> > </span>
+                    <p style="margin-left: 7%;">Apply now</p> <span style> > </span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!-- container apple products-->
+    <div class="container">
+        <div class="container_child">
+            <div class="products">
+                <a href="">
+                    <div style="background-color: rgb(52,40,60);"></div>
+                    <div style="background-image: url(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-2021-gallery-1?wid=4056&hei=2400&fmt=jpeg&qlt=80&.v=1630720516000); background-size: 100% 100%; background-repeat: no-repeat;">
+                        <!-- <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-2021-gallery-1?wid=4056&hei=2400&fmt=jpeg&qlt=80&.v=1630720516000" alt=""> -->
+                    </div>
+                </a>    
+            </div>
+            <div class="products">
+                <a href="">
+                    <div></div>
+                    <div>
+                        <img src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large_2x.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="products">
+                <a href="">
+                    <div style="background-color: rgb(245,245,247);"></div>
+                    <div>
+                        <img src="https://images.macrumors.com/t/fBmCNi7xVOBblXr0cmp8KUFwb1U=/1600x0/article-new/2014/09/apple-watch-series-7-green.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="products">
+                <a href="">
+                    <div></div>
+                    <div>
+                        <img src="https://www.macworld.com/wp-content/uploads/2021/10/apple-homepod-mini-colors.jpg?resize=1536%2C1024&quality=50&strip=all" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="products">
+                <!-- <div></div> -->
+                <a href="">
+                    <div style="height: 100%;">
+                        <img src="https://www.reliancedigital.in/medias/APPLE-AIRPODS-PRO-WITH-WL-CC-491630480-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMTY5OTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDlkL2g4OC85MjIwNDY2OTAxMDIyLmpwZ3xiMWM0YzJhNzQwNTIxNjRkYWE4NjJhY2NhZDQwZDA2NzRjZDg3ZGRjMDZkODFhYzg3NWQ3NGNmNDQ3NWU2OGJm" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="products">
+                <a href="">
+                    <div style="height: 100%;width: 100%; background-color: black;">
+                        <div style="height: 100%; width: 70%;margin: auto; background-color: black;">
+                            <img src="https://i.mydramalist.com/EVJB5_4f.jpg" alt="">
+                        </div>
+                    </div>
+                </a>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
